@@ -13,7 +13,7 @@ req = {
 
 $httpClient.post(req, function (error, response, data) {
   if (error) {
-    $notification.post("SMS", "查询失败", error);
+    // $notification.post("SMS", "查询失败", error);
   }
   else if (response.status == 200) {
     const msglist = JSON.parse(data);
