@@ -23,7 +23,7 @@ $httpClient.post(req, function (error, response, data) {
       $notification.post(msg.sender, msg.time, msg.msg);
     });
   } else {
-    $notification.post("SMS", "查询失败:" + response.status, data);
+    // $notification.post("SMS", "查询失败:" + response.status, data);
   }
 })
 $done();
